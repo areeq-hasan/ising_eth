@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ising-eth"
+version = "0.1.0"
+description = ""
+authors = ["Areeq Hasan <areeq.i.hasan@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "ising_eth" }]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+quspin = "^1.0.0"
+ipykernel = "^6.29.5"
+plotly = "^5.24.1"
+nbformat = "^5.10.4"
+pandas = "^2.2.3"
+ray = {extras = ["default"], version = "^2.39.0"}
+scipy = "^1.14.1"
+kaleido = "0.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
